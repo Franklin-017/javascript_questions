@@ -1,0 +1,18 @@
+const Table= () => {
+    return (
+        <table>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+    )
+}
+
+export default Table;

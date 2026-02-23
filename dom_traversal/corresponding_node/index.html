@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Traversal Practice</title>
+    <style>
+        .container { display: flex; gap: 50px; padding: 20px; }
+        .tree { border: 2px solid #333; padding: 10px; width: 200px; }
+        .highlight { background-color: yellow; } /* To visually verify our result */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="treeA" class="tree">
+            <h2>Tree A</h2>
+            <div>
+                <p>Paragraph 1</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Item 1</li>
+                    <li>
+                        <span id="target">Find my twin!</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="treeB" class="tree">
+            <h2>Tree B</h2>
+            <div>
+                <p>Paragraph 1</p>
+            </div>
+            <div>
+                <ul>
+                    <li>Item 1</li>
+                    <li>
+                        <span>Find my twin!</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./corresponding_node.js" type="module"></script>
+</body>
+</html>
