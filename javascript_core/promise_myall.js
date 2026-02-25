@@ -2,7 +2,7 @@ Promise.myAll = function(iterable) {
   return new Promise((resolve, reject) => {
     
     if (!iterable || iterable[Symbol.iterator] !== "function") {
-      return reject(new TypeError("Arguments should be iterable");
+      return reject(new TypeError("Arguments should be iterable"));
     }
 
     const result = [];
